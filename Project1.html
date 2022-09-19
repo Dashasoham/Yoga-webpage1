@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga Wbpage</title>
+    <style>
+      body {
+        background-color: #ffc5a7;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .container {
+        background-image: linear-gradient(to top, #a268ae 0, #ffefca 50%);
+        border-radius: 8px;
+      }
+      h1 {
+        text-align: center;
+        font-weight: bolder;
+        color: #4a548f;
+        border: 2px solid #4a548f;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 20px 50px;
+      }
+      h2 {
+        text-align: center;
+        font-weight: bold;
+        color: #5260a8;
+        padding: 15px 100px;
+        margin: 0 auto;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0;
+        max-width: 80%;
+        border-radius: 30px;
+      }
+      p {
+        color: black;
+        font-size: 16px;
+        margin: 20px 0px 10px 0px;
+        line-height: 2;
+      }
+      .learn-more {
+        text-decoration: none;
+        color: #4a548f;
+        display: block;
+        margin: 20px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: #4a548f;
+        color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        opacity: 0.9;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 12px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Yoga<br />🧘</h1>
+      <h2>Introduction to <em> Yoga</em></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/952/original/12-yoga-poses-icon-illustrations-1.png?1653236667"
+        width="600px"
+        alt="Yoga"
+      />
+      <hr />
+      <p>
+        <strong>Yoga</strong> is a group of physical, mental, and spiritual
+        practices or disciplines which originated in ancient India and aim to
+        control (yoke) and still the mind, recognizing a detached
+        witness-consciousness untouched by the mind (Chitta) and mundane
+        suffering (Duḥkha). There is a wide variety of schools of yoga,
+        practices, and goals in Hinduism, Buddhism, and Jainism, and traditional
+        and modern yoga is practiced worldwide.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Yoga"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <button class="readAboutYoga">Read about yoga</button>
+      <span class="footer">This page was built by Daria Korniienko</span>
+    </div>
+    <script>
+      function read() {
+        let name = prompt('What is your name');
+        let email = prompt('What is your email');
+        let yoga = prompt('Have you ever practiced yoga?');
+        yoga = yoga.toLowerCase();
+
+        if (
+          yoga === 'yes' ||
+          yoga === 'yeah' ||
+          yoga === 'yea' ||
+          yoga === 'yup'
+        ) {
+          alert(`Namaste ${name}! We'll be in touch!🤸`);
+        } else {
+          alert(`Thank you ${name}! We'll be in touch!🤸`);
+        }
+      }
+      let readAboutYoga = document.querySelector('.readAboutYoga');
+      readAboutYoga.addEventListener('click', read);
+    </script>
+  </body>
+</html>
